@@ -1,11 +1,11 @@
 Walker[] walkers = new Walker[1000];
 Food food = new Food();
-int foodXR = 0;
-int foodYR = 0;
-int foodXG = 0;
-int foodYG = 0;
-int foodXB = 0;
-int foodYB = 0;
+int foodXR;
+int foodYR;
+int foodXG;
+int foodYG;
+int foodXB;
+int foodYB;
 
 void setup() {
   size(1200, 700);
@@ -13,6 +13,12 @@ void setup() {
     walkers[i] = new Walker((int)(Math.random()*width), (int)(Math.random()*height), color(0, 0, 0));
     walkers[i].roll();
   }
+  foodXR = 0;
+  foodYR = 0;
+  foodXG = 0;
+  foodYG = 0;
+  foodXB = 0;
+  foodYB = 0;
 }
 
 void draw() {
@@ -114,8 +120,8 @@ class Walker {
             myY += (Math.random()*11) - 6;
           }
       } else {
-        //myX += (Math.random()*11) - 5;
-        //myY += (Math.random()*11) - 5;
+        myX += (Math.random()*11) - 5;
+        myY += (Math.random()*11) - 5;
       }  
     }
     
@@ -135,8 +141,8 @@ class Walker {
           }
         
       } else {
-        //myX += (Math.random()*11) - 5;
-        //myY += (Math.random()*11) - 5;
+        myX += (Math.random()*11) - 5;
+        myY += (Math.random()*11) - 5;
       }  
     }
     
@@ -156,8 +162,8 @@ class Walker {
           }
       
       } else {
-        //myX += (Math.random()*11) - 5;
-        //myY += (Math.random()*11) - 5;
+        myX += (Math.random()*11) - 5;
+        myY += (Math.random()*11) - 5;
       }  
     }
   }
