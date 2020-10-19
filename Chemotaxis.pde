@@ -102,7 +102,6 @@ class Walker {
   void move() {
     if(col == 0) {
       if(foodXR > 0 && foodYR > 0) {
-        if(r >= 100) {
           if(myX < foodXR) {
             myX += (Math.random()*11) - 4;
           } else {
@@ -114,10 +113,6 @@ class Walker {
           } else {
             myY += (Math.random()*11) - 6;
           }
-        } else {
-          myX += (Math.random()*11) - 5;
-          myY += (Math.random()*11) - 5;
-        }
       } else {
         myX += (Math.random()*11) - 5;
         myY += (Math.random()*11) - 5;
@@ -126,7 +121,7 @@ class Walker {
     
     if(col == 1) {
       if(foodXG > 0 && foodYG > 0) {
-        if(g >= 100) {
+        
           if(myX < foodXG) {
             myX += (Math.random()*11) - 4;
           } else {
@@ -138,10 +133,7 @@ class Walker {
           } else {
             myY += (Math.random()*11) - 6;
           }
-        } else {
-          myX += (Math.random()*11) - 5;
-          myY += (Math.random()*11) - 5;
-        }
+        
       } else {
         myX += (Math.random()*11) - 5;
         myY += (Math.random()*11) - 5;
@@ -150,7 +142,7 @@ class Walker {
     
     if(col == 2) {
       if(foodXB > 0 && foodYB > 0) {
-        if(b >= 100) {
+        
           if(myX < foodXB) {
             myX += (Math.random()*11) - 4;
           } else {
@@ -162,10 +154,7 @@ class Walker {
           } else {
             myY += (Math.random()*11) - 6;
           }
-        } else {
-          myX += (Math.random()*11) - 5;
-          myY += (Math.random()*11) - 5;
-        }
+      
       } else {
         myX += (Math.random()*11) - 5;
         myY += (Math.random()*11) - 5;
