@@ -114,8 +114,8 @@ class Walker {
             myY += (Math.random()*11) - 6;
           }
       } else {
-        myX += (Math.random()*11) - 5;
-        myY += (Math.random()*11) - 5;
+        //myX += (Math.random()*11) - 5;
+        //myY += (Math.random()*11) - 5;
       }  
     }
     
@@ -135,8 +135,8 @@ class Walker {
           }
         
       } else {
-        myX += (Math.random()*11) - 5;
-        myY += (Math.random()*11) - 5;
+        //myX += (Math.random()*11) - 5;
+        //myY += (Math.random()*11) - 5;
       }  
     }
     
@@ -156,8 +156,8 @@ class Walker {
           }
       
       } else {
-        myX += (Math.random()*11) - 5;
-        myY += (Math.random()*11) - 5;
+        //myX += (Math.random()*11) - 5;
+        //myY += (Math.random()*11) - 5;
       }  
     }
   }
