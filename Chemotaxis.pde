@@ -109,19 +109,19 @@ class Walker {
     if(col == 0) {
       if(foodXR > 0 && foodYR > 0) {
           if(myX < foodXR) {
-            myX += (Math.random()*11) - 4;
+            myX += (int)(Math.random()*11) - 4;
           } else {
-            myX += (Math.random()*11) - 6;
+            myX += (int)(Math.random()*11) - 6;
           }
           
           if(myY < foodYR) {
-            myY += (Math.random()*11) - 4;
+            myY += (int)(Math.random()*11) - 4;
           } else {
-            myY += (Math.random()*11) - 6;
+            myY += (int)(Math.random()*11) - 6;
           }
       } else {
-        myX += (Math.random()*11) - 5;
-        myY += (Math.random()*11) - 5;
+        myX += (int)(Math.random()*11) - 5;
+        myY += (int)(Math.random()*11) - 5;
       }  
     }
     
@@ -129,20 +129,20 @@ class Walker {
       if(foodXG > 0 && foodYG > 0) {
         
           if(myX < foodXG) {
-            myX += (Math.random()*11) - 4;
+            myX += (int)(Math.random()*11) - 4;
           } else {
-            myX += (Math.random()*11) - 6;
+            myX += (int)(Math.random()*11) - 6;
           }
           
           if(myY < foodYG) {
-            myY += (Math.random()*11) - 4;
+            myY += (int)(Math.random()*11) - 4;
           } else {
-            myY += (Math.random()*11) - 6;
+            myY += (int)(Math.random()*11) - 6;
           }
         
       } else {
-        myX += (Math.random()*11) - 5;
-        myY += (Math.random()*11) - 5;
+        myX += (int)(Math.random()*11) - 5;
+        myY += (int)(Math.random()*11) - 5;
       }  
     }
     
@@ -150,20 +150,20 @@ class Walker {
       if(foodXB > 0 && foodYB > 0) {
         
           if(myX < foodXB) {
-            myX += (Math.random()*11) - 4;
+            myX += (int)(Math.random()*11) - 4;
           } else {
-            myX += (Math.random()*11) - 6;
+            myX += (int)(Math.random()*11) - 6;
           }
           
           if(myY < foodYB) {
-            myY += (Math.random()*11) - 4;
+            myY += (int)(Math.random()*11) - 4;
           } else {
-            myY += (Math.random()*11) - 6;
+            myY += (int)(Math.random()*11) - 6;
           }
       
       } else {
-        myX += (Math.random()*11) - 5;
-        myY += (Math.random()*11) - 5;
+        myX += (int)(Math.random()*11) - 5;
+        myY += (int)(Math.random()*11) - 5;
       }  
     }
   }
