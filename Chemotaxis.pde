@@ -31,7 +31,7 @@ void draw() {
   }
 }
 
-void keyReleased() {
+void keyPressed() {
   if(key == 'r') {
     foodXR = mouseX;
     foodYR = mouseY;
@@ -56,6 +56,10 @@ void keyReleased() {
     foodXB = 0;
     foodYB = 0;
   }
+  
+}
+
+void keyReleased() {
   if(key == 'q' || key == 'Q') {
     for(int i = 0; i < walkers.length; i++) {
       walkers[i].reset();
