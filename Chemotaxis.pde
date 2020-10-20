@@ -32,17 +32,29 @@ void draw() {
 }
 
 void keyReleased() {
-  if(key == 'r' || key == 'R') {
+  if(key == 'r') {
     foodXR = mouseX;
     foodYR = mouseY;
   }
-  if(key == 'g' || key == 'G') {
+  if(key == 'R') {
+    foodXR = 0;
+    foodYR = 0;
+  }
+  if(key == 'g') {
     foodXG = mouseX;
     foodYG = mouseY;
   }
-  if(key == 'b' || key == 'B') {
+  if(key == 'G') {
+    foodXG = 0;
+    foodYG = 0;
+  }
+  if(key == 'b') {
     foodXB = mouseX;
     foodYB = mouseY;
+  }
+  if(key == 'B') {
+    foodXB = 0;
+    foodYB = 0;
   }
   if(key == 'q' || key == 'Q') {
     for(int i = 0; i < walkers.length; i++) {
